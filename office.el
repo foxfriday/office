@@ -57,6 +57,7 @@
 ;;;###autoload
 (defun office-update-local-contacts ()
   "Add local contacts using khard to `ecomplete`."
+  (interactive)
   (let* ((khard "khard email --parsable --search-in-source-files --remove-first-line")
          (cntcs (split-string (shell-command-to-string khard) "\n")))
     (ecomplete-setup)
