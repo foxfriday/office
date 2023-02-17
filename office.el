@@ -27,7 +27,7 @@
 (require 'ecomplete)
 (require 'icalendar)
 
-(defvar office-calendar-dir "~/.local/share/office/calendars/"
+(defvar office-calendar-dir "~/Calendar/calendars/"
   "Calendar directory.")
 
 (defvar office-diary-file nil
